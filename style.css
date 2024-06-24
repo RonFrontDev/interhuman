@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #d5c3fd;
+    --secondary-color: #333;
+    --text-color: #333;
+    --background-color: #fff;
+    --light-bg-color: #f4f4f4;
+    --white-color: #fff;
+    --font-family: Arial, sans-serif;
+    --border-radius: 5px;
+    --header-height: 60px;
+    --hero-bg: url('hero-bg.jpg');
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-color);
+}
