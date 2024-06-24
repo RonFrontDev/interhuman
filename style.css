@@ -5,10 +5,9 @@
     --background-color: #fff;
     --light-bg-color: #f4f4f4;
     --white-color: #fff;
-    --font-family: Arial, sans-serif;
+    --font-family: Velasans, sans-serif;
     --border-radius: 5px;
     --header-height: 60px;
-    --hero-bg: url('hero-bg.jpg');
 }
 
 /* Reset */
@@ -18,6 +17,41 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: var(--primary-color);
+nav {
+    padding: 30px;
+    position: sticky;
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1580px;
+    padding: 40px;
+}
+
+.heroHeadline {
+    font-size: 7rem;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.logoSvg {
+    height: 30px;
+    fill: wheat
+}
+
+.backgroundOverlay {
+    height: 100%;
+}
+.secound_logo{
+    height: 30px;
+}
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s, color 1.5s;
 }
