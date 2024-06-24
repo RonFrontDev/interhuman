@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const observerOptions = {
     root: null, // viewport
-    rootMargin: '400px',
+    rootMargin: '200px',
     threshold: 0.5, // 50% of section must be visible
   };
 
