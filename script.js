@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const observerOptions = {
     root: null, // viewport
-    rootMargin: '200px',
+    // rootMargin: '400px',
     threshold: 0.5, // 50% of section must be visible
   };
 
@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // const bgColor = getComputedStyle(entry.target).backgroundColor;
         document.body.style.color = '#d5c3fd';
         document.body.style.backgroundColor = 'black';
+        section2_awareContainer.style.color = '#d5c3fd';
       } else {
         document.body.style.backgroundColor = '#d5c3fd';
         document.body.style.color = 'black';
