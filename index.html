@@ -1,93 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>InterHuman AI</title>
-</head>
-<body>
-    <header>
+  </head>
+  <body>
+    <main>
+      <header>
         <nav>
-            <div class="logo">
-                <svg class="logoSvg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 677.89 91.12">
-                    <g>
-                      <path fill="currentColor" d="M127.53,83.05V6.34h14.33v76.71h-14.33Z"></path>
-                      <path fill="currentColor" d="M165.29,26.55v56.54h-13.65V26.55h13.65ZM201.56,45.42v37.67h-13.65v-36.46c0-4.82-4.25-9.42-11.31-9.42-6.52,0-11.31,4.6-11.31,9.42,0-11.71,3.87-20.17,12.66-21.31,9.68-1.25,23.6,5.87,23.6,20.09Z"></path>
-                      <path fill="currentColor" d="M237.69,26.52v10.65h-29.7c2.92.02,20.11.48,20.11,8.56v21.02c0,2.35,1.98,4.31,4.2,4.31h5.38v12.03h-9.33c-7.6,0-13.9-6.17-13.9-13.9v-24.42c0-7.59-6.88-7.59-6.88-7.59h-1.35v-10.65h8.24V6.38h13.65v20.15h9.59Z"></path>
-                      <path fill="currentColor" d="M296.95,58.53h-41.9c1.35,9.26,7.62,13.69,14.06,13.78,4.29-.06,8.51-2.04,11.25-6.11h14.9c-4.16,11.6-14.64,18.05-26.14,18.14-14.87-.12-28.04-10.79-28.04-29.63s13.47-29.63,28.04-29.63,28.04,10.85,28.04,29.63c0,1.31-.07,2.59-.19,3.82ZM282.73,48.15c-2.8-7.25-7.77-10.95-13.62-11.04-5.85.09-10.84,3.76-13.63,11.04h27.25Z"></path>
-                      <path fill="currentColor" d="M337.03,26.54v12.65s-2.62-1.3-7.52-1.3c-7.88,0-11.99,4.33-11.99,10.23v34.97h-13.65V26.52h13.65v20.92c0-14.14,6.09-22.25,11.99-22.25,2.64,0,5.18.48,7.52,1.35Z"></path>
-                      <path fill="currentColor" d="M355.55,6.38v76.71h-13.65V6.38h13.65ZM355.55,50.11c0-.13,0-.25,0-.37,0,.12,0,.25,0,.37ZM391.82,45.51v37.58h-13.65v-32.98c0-6.98-2.81-13.34-11.31-13.34-7.84,0-11.2,5.46-11.31,12.97.12-15.2,7.25-23.79,15.54-24.48,9.83-.81,20.72,7.14,20.72,20.25Z"></path>
-                      <path fill="currentColor" d="M435.47,61.49c0,10.73-1.9,21.52-12.25,22.72-15.61,1.81-23.34-10.08-23.34-20.02V26.52h13.65v37.67c0,4.82,4.25,8.2,11.31,8.2s10.63-5.01,10.63-10.91ZM449.12,26.52v56.54h-13.65V26.52h13.65Z"></path>
-                      <path fill="currentColor" d="M472.16,26.52v56.57h-13.65V26.52h13.65ZM539.29,44.73v38.36h-13.65v-37.67c0-4.82-5.14-8.2-9.96-8.2s-9.96,2.66-9.96,8.2v37.67h-13.65v-37.67c0-5.54-5.14-8.2-9.96-8.2s-9.96,3.38-9.96,8.2c0-13.97,6.37-19.28,12.8-20.15,6.79-.65,13.57,3.35,16.78,9.7,2.35-5.68,10.31-9.77,16.78-9.77,12.52,0,20.76,8.26,20.76,19.54Z"></path>
-                      <path fill="currentColor" d="M594.56,41.07v41.91h-13.65v-40.53c0,11.68-3.76,14.46-8.96,14.46h-3.1c-3.58,0-9.14,1.06-9.77,6.92-.52,4.77,3.42,9.09,9.77,9.09s12.06-4.32,12.06-9.14c0,13.15-5.35,20.26-14.43,20.54-13.84.44-21.05-9.61-21.05-18.69,0-11.53,9.59-18.7,21.18-18.7h8.52c3.44,0,5.91-1.99,5.76-4.48-.27-4.24-3.77-6.45-9.55-6.45-3.78,0-7.39,2.31-8.6,5.15h-13.67c2.53-11.74,12.64-16.07,22.27-16.07s23.21,4.96,23.21,15.99Z"></path>
-                      <path fill="currentColor" d="M617.16,26.55v56.54h-13.65V26.55h13.65ZM653.43,45.42v37.67h-13.65v-36.46c0-4.82-4.25-9.42-11.31-9.42-6.52,0-11.31,4.6-11.31,9.42,0-11.71,3.87-20.17,12.66-21.31,9.68-1.25,23.6,5.87,23.6,20.09Z"></path>
-                      <path fill="currentColor" d="M676.7,29.44c0,2.5-.97,4.84-2.74,6.61-1.76,1.77-4.11,2.74-6.61,2.74s-4.84-.97-6.61-2.74c-1.76-1.77-2.74-4.11-2.74-6.61s.97-4.84,2.74-6.61c1.77-1.77,4.11-2.74,6.61-2.74s4.84.97,6.61,2.74c1.77,1.77,2.74,4.11,2.74,6.61ZM675.09,29.44c0-2.07-.8-4.01-2.27-5.47-1.46-1.46-3.4-2.27-5.47-2.27s-4.01.8-5.47,2.27c-1.46,1.46-2.27,3.4-2.27,5.47s.8,4.01,2.27,5.47c1.46,1.46,3.4,2.27,5.47,2.27s4.01-.8,5.47-2.27c1.46-1.46,2.27-3.4,2.27-5.47ZM669.21,30.59l2.69,3.85h-2.24l-2.69-3.85h-1.59s0,3.85,0,3.85h-1.92v-10.26h5.23c1.75,0,3.28,1.46,3.28,3.15,0,1.8-1.25,3.24-2.76,3.26ZM670.06,27.4c0-.76-.6-1.61-1.37-1.61h-3.31v3.19h3.11c1.05,0,1.57-.79,1.57-1.58Z"></path>
-                    </g>
-                    <g>
-                      <path fill="currentColor" d="M39.33,91.12l-.25-5.43c-.13-2.72-.68-16.54.9-21.99,1.55-5.33,5.64-9.51,10.44-10.66,2.5-.6,7.37-.86,11.99,4.08l23.32,26.15-8.12,7.24-23.23-26.06c-.21-.22-.96-.95-1.44-.84-.82.2-2.06,1.52-2.52,3.11-.72,2.46-.81,11.49-.48,18.44l.25,5.43-10.86.51Z"></path>
-                      <path fill="currentColor" d="M8.03,87.91l-7.24-8.12,26.06-23.23c.22-.21.95-.96.84-1.44-.2-.82-1.52-2.06-3.11-2.52-2.46-.71-11.49-.81-18.44-.48l-5.43.26-.51-10.86,5.43-.26c2.72-.13,16.54-.68,21.98.9,5.33,1.55,9.51,5.65,10.66,10.44.6,2.5.86,7.37-4.08,11.99l-26.16,23.32Z"></path>
-                      <path fill="currentColor" d="M29.46,36.93L6.14,10.78,14.25,3.54l23.23,26.06c.21.22.96.95,1.43.84.82-.2,2.06-1.53,2.52-3.11.71-2.46.81-11.49.48-18.44l-.25-5.43,10.86-.51.25,5.43c.13,2.72.68,16.53-.9,21.98-1.55,5.33-5.64,9.51-10.44,10.66-2.49.6-7.37.86-11.99-4.08Z"></path>
-                      <path fill="currentColor" d="M56.69,47.2c-1.51-1.68-2.59-3.64-3.09-5.74-.6-2.49-.86-7.37,4.08-11.99l26.15-23.32,7.24,8.12-26.06,23.23c-.22.21-.95.96-.84,1.43.2.83,1.53,2.07,3.11,2.52,2.46.71,11.49.81,18.44.48l5.43-.25.51,10.86-5.43.25c-2.72.13-16.53.68-21.98-.9-3-.87-5.63-2.55-7.56-4.7Z"></path>
-                    </g>
-                  </svg>
-            </div>
+          <div class="logo">
+            <svg
+              class="logoSvg"
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 677.89 91.12"
+            >
+              <g>
+                <path
+                  fill="currentColor"
+                  d="M127.53,83.05V6.34h14.33v76.71h-14.33Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M165.29,26.55v56.54h-13.65V26.55h13.65ZM201.56,45.42v37.67h-13.65v-36.46c0-4.82-4.25-9.42-11.31-9.42-6.52,0-11.31,4.6-11.31,9.42,0-11.71,3.87-20.17,12.66-21.31,9.68-1.25,23.6,5.87,23.6,20.09Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M237.69,26.52v10.65h-29.7c2.92.02,20.11.48,20.11,8.56v21.02c0,2.35,1.98,4.31,4.2,4.31h5.38v12.03h-9.33c-7.6,0-13.9-6.17-13.9-13.9v-24.42c0-7.59-6.88-7.59-6.88-7.59h-1.35v-10.65h8.24V6.38h13.65v20.15h9.59Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M296.95,58.53h-41.9c1.35,9.26,7.62,13.69,14.06,13.78,4.29-.06,8.51-2.04,11.25-6.11h14.9c-4.16,11.6-14.64,18.05-26.14,18.14-14.87-.12-28.04-10.79-28.04-29.63s13.47-29.63,28.04-29.63,28.04,10.85,28.04,29.63c0,1.31-.07,2.59-.19,3.82ZM282.73,48.15c-2.8-7.25-7.77-10.95-13.62-11.04-5.85.09-10.84,3.76-13.63,11.04h27.25Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M337.03,26.54v12.65s-2.62-1.3-7.52-1.3c-7.88,0-11.99,4.33-11.99,10.23v34.97h-13.65V26.52h13.65v20.92c0-14.14,6.09-22.25,11.99-22.25,2.64,0,5.18.48,7.52,1.35Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M355.55,6.38v76.71h-13.65V6.38h13.65ZM355.55,50.11c0-.13,0-.25,0-.37,0,.12,0,.25,0,.37ZM391.82,45.51v37.58h-13.65v-32.98c0-6.98-2.81-13.34-11.31-13.34-7.84,0-11.2,5.46-11.31,12.97.12-15.2,7.25-23.79,15.54-24.48,9.83-.81,20.72,7.14,20.72,20.25Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M435.47,61.49c0,10.73-1.9,21.52-12.25,22.72-15.61,1.81-23.34-10.08-23.34-20.02V26.52h13.65v37.67c0,4.82,4.25,8.2,11.31,8.2s10.63-5.01,10.63-10.91ZM449.12,26.52v56.54h-13.65V26.52h13.65Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M472.16,26.52v56.57h-13.65V26.52h13.65ZM539.29,44.73v38.36h-13.65v-37.67c0-4.82-5.14-8.2-9.96-8.2s-9.96,2.66-9.96,8.2v37.67h-13.65v-37.67c0-5.54-5.14-8.2-9.96-8.2s-9.96,3.38-9.96,8.2c0-13.97,6.37-19.28,12.8-20.15,6.79-.65,13.57,3.35,16.78,9.7,2.35-5.68,10.31-9.77,16.78-9.77,12.52,0,20.76,8.26,20.76,19.54Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M594.56,41.07v41.91h-13.65v-40.53c0,11.68-3.76,14.46-8.96,14.46h-3.1c-3.58,0-9.14,1.06-9.77,6.92-.52,4.77,3.42,9.09,9.77,9.09s12.06-4.32,12.06-9.14c0,13.15-5.35,20.26-14.43,20.54-13.84.44-21.05-9.61-21.05-18.69,0-11.53,9.59-18.7,21.18-18.7h8.52c3.44,0,5.91-1.99,5.76-4.48-.27-4.24-3.77-6.45-9.55-6.45-3.78,0-7.39,2.31-8.6,5.15h-13.67c2.53-11.74,12.64-16.07,22.27-16.07s23.21,4.96,23.21,15.99Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M617.16,26.55v56.54h-13.65V26.55h13.65ZM653.43,45.42v37.67h-13.65v-36.46c0-4.82-4.25-9.42-11.31-9.42-6.52,0-11.31,4.6-11.31,9.42,0-11.71,3.87-20.17,12.66-21.31,9.68-1.25,23.6,5.87,23.6,20.09Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M676.7,29.44c0,2.5-.97,4.84-2.74,6.61-1.76,1.77-4.11,2.74-6.61,2.74s-4.84-.97-6.61-2.74c-1.76-1.77-2.74-4.11-2.74-6.61s.97-4.84,2.74-6.61c1.77-1.77,4.11-2.74,6.61-2.74s4.84.97,6.61,2.74c1.77,1.77,2.74,4.11,2.74,6.61ZM675.09,29.44c0-2.07-.8-4.01-2.27-5.47-1.46-1.46-3.4-2.27-5.47-2.27s-4.01.8-5.47,2.27c-1.46,1.46-2.27,3.4-2.27,5.47s.8,4.01,2.27,5.47c1.46,1.46,3.4,2.27,5.47,2.27s4.01-.8,5.47-2.27c1.46-1.46,2.27-3.4,2.27-5.47ZM669.21,30.59l2.69,3.85h-2.24l-2.69-3.85h-1.59s0,3.85,0,3.85h-1.92v-10.26h5.23c1.75,0,3.28,1.46,3.28,3.15,0,1.8-1.25,3.24-2.76,3.26ZM670.06,27.4c0-.76-.6-1.61-1.37-1.61h-3.31v3.19h3.11c1.05,0,1.57-.79,1.57-1.58Z"
+                ></path>
+              </g>
+              <g>
+                <path
+                  fill="currentColor"
+                  d="M39.33,91.12l-.25-5.43c-.13-2.72-.68-16.54.9-21.99,1.55-5.33,5.64-9.51,10.44-10.66,2.5-.6,7.37-.86,11.99,4.08l23.32,26.15-8.12,7.24-23.23-26.06c-.21-.22-.96-.95-1.44-.84-.82.2-2.06,1.52-2.52,3.11-.72,2.46-.81,11.49-.48,18.44l.25,5.43-10.86.51Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M8.03,87.91l-7.24-8.12,26.06-23.23c.22-.21.95-.96.84-1.44-.2-.82-1.52-2.06-3.11-2.52-2.46-.71-11.49-.81-18.44-.48l-5.43.26-.51-10.86,5.43-.26c2.72-.13,16.54-.68,21.98.9,5.33,1.55,9.51,5.65,10.66,10.44.6,2.5.86,7.37-4.08,11.99l-26.16,23.32Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M29.46,36.93L6.14,10.78,14.25,3.54l23.23,26.06c.21.22.96.95,1.43.84.82-.2,2.06-1.53,2.52-3.11.71-2.46.81-11.49.48-18.44l-.25-5.43,10.86-.51.25,5.43c.13,2.72.68,16.53-.9,21.98-1.55,5.33-5.64,9.51-10.44,10.66-2.49.6-7.37.86-11.99-4.08Z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M56.69,47.2c-1.51-1.68-2.59-3.64-3.09-5.74-.6-2.49-.86-7.37,4.08-11.99l26.15-23.32,7.24,8.12-26.06,23.23c-.22.21-.95.96-.84,1.43.2.83,1.53,2.07,3.11,2.52,2.46.71,11.49.81,18.44.48l5.43-.25.51,10.86-5.43.25c-2.72.13-16.53.68-21.98-.9-3-.87-5.63-2.55-7.56-4.7Z"
+                ></path>
+              </g>
+            </svg>
+          </div>
         </nav>
-    </header>
-    <div class="backgroundOverlay">
+      </header>
 
-    <section class="section section1" id="hero">
-        <div><h1 class="heroTitle">Interhuman is an AI research and products studio.</h1>
+      <section class="section section1" data-my-color="#d5c3fd" id="hero">
+        <div>
+          <h1 class="heroTitle">
+            Interhuman is an AI research and products studio.
+          </h1>
         </div>
         <div>
-            <p class="heroSubTitle">Backed by</p>
-            <svg class="secound_logo" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" version="1.1" viewBox="0 0 1952 470">
-            <path class="cls-1" d="M0,235v235h467V0H0v235ZM869,124v22h83v221h48v-221h83v-44h-214v22ZM1169,234.5v132.5h185v-44h-138V102h-47v132.5ZM1439,234.5v132.5h196v-43h-154v-69h118v-43h-118v-67h154v-43h-196v132.5ZM1728,234.5v132.5h47v-92h28.8c0,0,28.8.1,28.8.1l32.1,45.7,32.1,45.7,27.8.3c22.3.2,27.7,0,27.3-1-.3-.7-15.1-21.8-32.9-46.8-17.8-25-33.4-46.9-34.7-48.7-2.1-3.1-2.2-3.3-.5-3.9,5.5-1.9,18.2-7.7,23.1-10.5,3.1-1.8,9.8-7.4,14.8-12.4,7.4-7.3,9.9-10.6,13.3-17.5,6.6-13.5,8.4-21.8,8.4-39.5s-1.8-26-8.2-39c-12.5-25.3-38.3-40.8-74.1-44.5-5.8-.6-36.2-1-71.5-1h-61.4v132.5ZM311.2,233.5c31.2,71.5,56.9,130.6,57.2,131.2.4,1-4.6,1.2-23.2,1.2h-23.7s-43.9-103.8-43.9-103.8c-24.2-57.1-44.2-104.1-44.6-104.5-.4-.4-20.6,46.3-45,103.7l-44.3,104.5h-45.6l1.4-3.2c3.5-8.3,111.8-256.4,112.7-258,.9-1.6,2.6-1.8,21.7-1.5l20.7.3,56.7,130ZM554,235v132h46l.3-92.4.3-92.4,71.5,92.4,71.5,92.4h20.2s20.2,0,20.2,0V103h-47l-.3,90-.3,90-69.5-90-69.5-90h-21.8c0,0-21.8-.1-21.8-.1v132ZM1860,147.4c14.4,3.1,26.4,11.5,31.5,22.1,10,21.2,2.2,45.4-18,56.2-12,6.4-13.9,6.6-58.2,7.1l-40.2.4v-87.1h39.2c29.5,0,40.9.4,45.8,1.4Z"/>
+          <p class="heroSubTitle">Backed by</p>
+          <svg
+            class="secound_logo"
+            xmlns="http://www.w3.org/2000/svg"
+            id="Layer_1"
+            data-name="Layer 1"
+            version="1.1"
+            viewBox="0 0 1952 470"
+          >
+            <path
+              class="cls-1"
+              d="M0,235v235h467V0H0v235ZM869,124v22h83v221h48v-221h83v-44h-214v22ZM1169,234.5v132.5h185v-44h-138V102h-47v132.5ZM1439,234.5v132.5h196v-43h-154v-69h118v-43h-118v-67h154v-43h-196v132.5ZM1728,234.5v132.5h47v-92h28.8c0,0,28.8.1,28.8.1l32.1,45.7,32.1,45.7,27.8.3c22.3.2,27.7,0,27.3-1-.3-.7-15.1-21.8-32.9-46.8-17.8-25-33.4-46.9-34.7-48.7-2.1-3.1-2.2-3.3-.5-3.9,5.5-1.9,18.2-7.7,23.1-10.5,3.1-1.8,9.8-7.4,14.8-12.4,7.4-7.3,9.9-10.6,13.3-17.5,6.6-13.5,8.4-21.8,8.4-39.5s-1.8-26-8.2-39c-12.5-25.3-38.3-40.8-74.1-44.5-5.8-.6-36.2-1-71.5-1h-61.4v132.5ZM311.2,233.5c31.2,71.5,56.9,130.6,57.2,131.2.4,1-4.6,1.2-23.2,1.2h-23.7s-43.9-103.8-43.9-103.8c-24.2-57.1-44.2-104.1-44.6-104.5-.4-.4-20.6,46.3-45,103.7l-44.3,104.5h-45.6l1.4-3.2c3.5-8.3,111.8-256.4,112.7-258,.9-1.6,2.6-1.8,21.7-1.5l20.7.3,56.7,130ZM554,235v132h46l.3-92.4.3-92.4,71.5,92.4,71.5,92.4h20.2s20.2,0,20.2,0V103h-47l-.3,90-.3,90-69.5-90-69.5-90h-21.8c0,0-21.8-.1-21.8-.1v132ZM1860,147.4c14.4,3.1,26.4,11.5,31.5,22.1,10,21.2,2.2,45.4-18,56.2-12,6.4-13.9,6.6-58.2,7.1l-40.2.4v-87.1h39.2c29.5,0,40.9.4,45.8,1.4Z"
+            />
           </svg>
         </div>
-    </section>
+      </section>
 
-    <section class="section section2">
+      <section
+        class="section section2"
+        data-my-color="black"
+        data-my-text-color="#d5c3fd"
+      >
         <div class="section2_videoContainer">
-            <video class="section2_video" autoplay="" src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6650847cbc601b363c664711_emotion-aware-ai-compressed-transcode.mp4" data-wf-ignore="true"><source src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6650847cbc601b363c664711_emotion-aware-ai-compressed-transcode.webm"></video>
-            <!-- <video  autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6650847cbc601b363c664711_emotion-aware-ai-compressed-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6650847cbc601b363c664711_emotion-aware-ai-compressed-transcode.mp4" data-wf-ignore="true"><source src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6650847cbc601b363c664711_emotion-aware-ai-compressed-transcode.webm" data-wf-ignore="true"></video></div> -->
+          <video
+            class="section2_video"
+            autoplay=""
+            src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6650847cbc601b363c664711_emotion-aware-ai-compressed-transcode.mp4"
+          ></video>
+        </div>
+        <!-- <video  autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6650847cbc601b363c664711_emotion-aware-ai-compressed-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6650847cbc601b363c664711_emotion-aware-ai-compressed-transcode.mp4" data-wf-ignore="true"><source src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19%2F6650847cbc601b363c664711_emotion-aware-ai-compressed-transcode.webm" data-wf-ignore="true"></video></div> -->
         <div class="section2_awareContainer">
-            <h2 class="section2_awareTitle">Social-Aware AI</h2>
-            <p class="section2_awareParagraph">Our technology interprets body language, facial expressions, and tone of voice in real time. By combining this with contextual awareness, we enable more natural and relevant conversations with users.</p>
+          <h2 class="section2_awareTitle">Social-Aware AI</h2>
+          <p class="section2_awareParagraph">
+            Our technology interprets body language, facial expressions, and
+            tone of voice in real time. By combining this with contextual
+            awareness, we enable more natural and relevant conversations with
+            users.
+          </p>
         </div>
         <div class="section2_phoneContainer">
-            <img class="section2_phone" src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one.jpg" alt="">
-            <!-- <img class="section2_phone" src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one.jpg" loading="lazy" sizes="(max-width: 479px) 201.25px, (max-width: 767px) 45vw, (max-width: 991px) 46vw, 47vw" srcset="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one-p-500.jpg 500w, https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one-p-800.jpg 800w, https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one-p-1080.jpg 1080w, https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one-p-1600.jpg 1600w, https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one-p-2000.jpg 2000w, https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one.jpg 2166w" alt=""> -->
+          <img
+            class="section2_phone"
+            src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/665dbff5c0413760af91ec66_product-one.jpg"
+            alt=""
+          />
         </div>
         <div class="section2_launchContainer">
-            <h2 class="section2_launchTitle">First product launching soon.</h2>
-            <p class="section2_launchParagraph section2_launchParagraph-padding">Our first product is designed to assist professionals with communication issues in the workplace.</p><p class="section2_launchParagraph section2_launchParagraph-padding" >The app provides personalized paths for discovery and learning and real-time actionable insights on improving communication with others. We help you prepare for difficult situations before you face them in the real world. Available anywhere at any time, providing a private safe space.</p>
-                <a class="section2_launchBtn" href="#email">Get uddated 
-                <span class="section2_launchIconSpan">
-                    <svg class="section2_launchIcon" viewBox="0 0 34 24" >
-                <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807614 21.9792 0.807614 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM2 13.5L32 13.5L32 10.5L2 10.5L2 13.5Z"></path>
-                </svg>
-                </span>
-             </a>
+          <h2 class="section2_launchTitle">First product launching soon.</h2>
+          <p class="section2_launchParagraph section2_launchParagraph-padding">
+            Our first product is designed to assist professionals with
+            communication issues in the workplace.
+          </p>
+          <p class="section2_launchParagraph section2_launchParagraph-padding">
+            The app provides personalized paths for discovery and learning and
+            real-time actionable insights on improving communication with
+            others. We help you prepare for difficult situations before you face
+            them in the real world. Available anywhere at any time, providing a
+            private safe space.
+          </p>
+          <a class="section2_launchBtn" href="#email"
+            >Get uddated
+            <span class="section2_launchIconSpan">
+              <svg class="section2_launchIcon" viewBox="0 0 34 24">
+                <path
+                  d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807614 21.9792 0.807614 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM2 13.5L32 13.5L32 10.5L2 10.5L2 13.5Z"
+                ></path>
+              </svg>
+            </span>
+          </a>
         </div>
-        <div>
-            <h2>AI that deepens human understanding.</h2>
-            <p><span>Social-Aware AI </span> — We focus on developing AI that deeply understands human social signals and emotions, by combining research and insights from psychology, neuroscience, and computer science to create AI that models human interactions.</p>
-            <p><span>Helping people understand each other </span> — By continuously integrating real-world feedback, we refine our AI to be more empathetic and context-aware, ultimately enhancing the quality of human relationships</p>
-        </div>
-        </section>       
-    </div>
-    </section>
- <section>
-        
-    </sect>
-    
-    
-    <section class="section section4">
-   
-    <main>
-
+        <section
+          class="section3"
+          data-my-color="black"
+          data-my-text-color="#d5c3fd"
+        >
+          <h2>AI that deepens human understanding.</h2>
+          <p>
+            <span>Social-Aware AI </span> — We focus on developing AI that
+            deeply understands human social signals and emotions, by combining
+            research and insights from psychology, neuroscience, and computer
+            science to create AI that models human interactions.
+          </p>
+          <p>
+            <span>Helping people understand each other </span> — By continuously
+            integrating real-world feedback, we refine our AI to be more
+            empathetic and context-aware, ultimately enhancing the quality of
+            human relationships
+          </p>
+        </section>
+      </section>
+      <!-- <section class="section">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+          explicabo veritatis molestiae voluptate dolorum accusantium autem ex
+          quos magni! Sunt expedita nostrum animi neque illum sit inventore
+          minus, ratione repellat sed dolor nobis nihil ut illo quidem, suscipit
+          possimus dolorum totam atque eius asperiores quisquam. Consequatur
+          fugiat, tenetur dolores, minus ullam doloremque vero dolorum
+          laboriosam possimus expedita similique omnis atque odio accusantium
+          distinctio nobis quia, recusandae maxime! Impedit ea quas vel totam
+          laudantium dignissimos numquam dolorum rem eum in. Earum accusantium
+          repudiandae perferendis non illo quidem vero fugiat totam inventore
+        </p>
+      </section> -->
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
