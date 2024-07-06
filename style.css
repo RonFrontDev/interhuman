@@ -1,8 +1,14 @@
 :root {
+  --bodyBg: #000;
+  --bodyColor: #fff;
+  --sectionBg: #534d41;
+  --sectionColor: yellow;
+
   --primary-color: #d5c3fd;
   --secondary-color: #333;
   --text-color: #333;
   --pink-background-color: #ebb1d6;
+  --green-background-color: #bacec0;
   --light-bg-color: #f4f4f4;
   --black-color: #000000;
   --white-color: #fff;
@@ -18,12 +24,23 @@
   box-sizing: border-box;
   font-family: var(--font-family);
 }
-/* body {
-  background-color: var(--primary-color);
-} */
+img {
+  display: block;
+  min-width: 100%;
+}
+body {
+  transition: background-color 1s, color 0.5s;
+  background-color: var(--bodyBg);
+  color: var(--bodyColor);
+}
+
+.pageCenter {
+  margin-inline: auto;
+  max-width: 1570px;
+}
 
 nav {
-  padding: 30px;
+  padding: 40px;
   position: fixed;
   top: 0;
 }
@@ -35,9 +52,14 @@ nav {
 }
 
 .heroTitle {
-  font-size: 7.8rem;
+  font-size: 11rem;
   font-family: var(--font-family);
-  text-align: center;
+  font-weight: bold;
+  text-align: start;
+  max-width: 15ch;
+  letter-spacing: -0.2rem;
+  line-height: 1;
+  padding-bottom: 70px;
 }
 .heroSubTitle {
   font-size: 1.8rem;
@@ -55,24 +77,23 @@ nav {
 }
 .secound_logo {
   height: 30px;
-  fill: black;
   padding-left: 30px;
 }
 .section {
-  width: 100%;
   display: flex;
-  transition: background-color 0.5s, color 1.5s;
+  transition: background-color 1s, color 0.5s;
   /* padding-left: 50px; */
 }
 .section1 {
   padding-top: 200px;
+  padding-bottom: 300px;
 }
 .section2 {
-  /* height: 100vh; */
+  min-height: 100vh;
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 150px 30px 0 30px;
+  padding: 150px 30px 0;
 }
 .section2_video {
   max-width: 100%;
@@ -108,13 +129,13 @@ nav {
 .section2_phone {
   border-radius: 5px;
   max-width: 100%;
-  min-width: 100%;
   max-height: 480px;
   object-fit: cover;
 }
 
 .section2_launchContainer {
-  background-color: var(--pink-background-color);
+  background-color: var(--sectionBg);
+  color: var(--sectionColor);
   padding: 80px 50px;
   max-height: 100%;
   border-radius: 5px;
@@ -124,13 +145,11 @@ nav {
 .section2_launchTitle {
   font-size: 4rem;
 
-  color: var(--black-color);
   font-weight: 400;
   padding-bottom: 15px;
 }
 
 .section2_launchParagraph {
-  color: var(--black-color);
   max-width: 75%;
   font-size: 2rem;
   font-weight: 200;
@@ -141,14 +160,77 @@ nav {
 }
 .section2_launchBtn {
   font-size: 1.5rem;
-  background-color: var(--black-color);
-  color: var(--primary-color);
+  background-color: var(--sectionColor);
+  color: var(--sectionBg);
   text-decoration: none;
   padding: 20px 60px;
   border-radius: 50px;
 }
 .section2_launchIcon {
   height: 15px;
-  fill: var(--primary-color);
   padding-left: 10px;
+}
+
+.section3 {
+  color: var(--black-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100%;
+  margin: 0 30px;
+  padding: 100px;
+  border-radius: 5px;
+  transition: background-color 1s, color 0.5s;
+}
+.section3_title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--bodyColor);
+  /* padding-bottom: 30px; */
+}
+.section3_paragraph {
+  font-size: 3rem;
+  padding: 30px 0;
+  color: var(--bodyColor);
+}
+.bold {
+  font-weight: 700;
+}
+
+.section4 {
+  display: flex;
+  justify-content: center;
+}
+
+.section4_innerwrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  padding: 30px;
+}
+.section4_title {
+  font-size: 10rem;
+  padding: 30px;
+}
+
+.section2_paragraph {
+  font-size: 3rem;
+  line-height: 1.5;
+  padding: 30px;
+  max-width: 80%;
+}
+
+.section4_video {
+  position: relative;
+}
+
+.section4_icon {
+  position: absolute;
+  left: 50%;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(112, 112, 112);
+  padding: 30px;
+  border-radius: 50%;
 }
