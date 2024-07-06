@@ -200,21 +200,25 @@ nav {
 .section4 {
   display: flex;
   justify-content: center;
+  background-color: var(--bodyBg);
+  color: var(--bodyBg);
+  padding: 30px;
 }
 
 .section4_innerwrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: black;
-  padding: 30px;
+
+  position: relative;
+  background-color: var(--sectionBg);
 }
 .section4_title {
   font-size: 10rem;
   padding: 30px;
 }
 
-.section2_paragraph {
+.section4_paragraph {
   font-size: 3rem;
   line-height: 1.5;
   padding: 30px;
@@ -222,15 +226,47 @@ nav {
 }
 
 .section4_video {
+  width: 100%;
   position: relative;
+  padding: 40px;
 }
 
 .section4_icon {
   position: absolute;
-  left: 50%;
+
   height: 200px;
   width: 200px;
   background-color: rgb(112, 112, 112);
   padding: 30px;
   border-radius: 50%;
+  top: 50%; /* Center vertically */
+  left: 50%;
+}
+
+.section5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bodyBg);
+  padding: 30px;
+}
+.section5_container {
+  width: 100%;
+  border-bottom: 5px solid var(--bodyColor);
+  padding: 40px;
+}
+
+.section5_icon {
+  padding: 20px;
+  margin: 0;
+  height: 100px;
+  fill: currentColor;
+}
+
+.section5_title {
+  font-size: 5rem;
+}
+.section5_paragraph {
+  font-size: 3rem;
 }
