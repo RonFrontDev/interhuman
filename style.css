@@ -251,14 +251,21 @@ nav {
   background-color: var(--bodyBg);
   padding: 30px;
 }
-.section5_container {
+
+.border {
   width: 100%;
   border-bottom: 5px solid var(--bodyColor);
-  padding: 40px;
+  padding: 60px 0;
+}
+
+.noBorder {
+  width: 100%;
+  border: none;
+  padding: 60px 0;
 }
 
 .section5_icon {
-  padding: 20px;
+  /* padding: 20px; */
   margin: 0;
   height: 100px;
   fill: currentColor;
@@ -266,7 +273,53 @@ nav {
 
 .section5_title {
   font-size: 5rem;
+  /* padding: 30px; */
 }
 .section5_paragraph {
+  text-align: left;
   font-size: 3rem;
+  /* padding-left: 40px; */
+}
+
+.section6 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.section6_title {
+  padding-top: 100px;
+  font-size: 5rem;
+}
+
+.section6_paragraph {
+  padding: 30px 0;
+}
+.section6_firstParagraph {
+  font-size: 2rem;
+}
+
+.section6_secondParagraph {
+  font-size: 1.5rem;
+}
+
+.section6_btn {
+  font-size: 1.5rem;
+  background-color: var(--bodyColor);
+  color: var(--bodyBg);
+  text-decoration: none;
+  padding: 30px;
+  border-radius: 50px;
+  text-align: center;
+}
+.section6_icon {
+  height: 15px;
+  padding-left: 10px;
+}
+
+.section6_innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
 }
