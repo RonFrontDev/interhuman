@@ -331,6 +331,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .footer-logo {
@@ -379,6 +380,11 @@ footer {
   color: white;
   font-size: 1.5rem;
   padding: 30px;
+}
+
+.scene {
+  position: absolute;
+  top: 0;
 }
 
 @keyframes scroll {
