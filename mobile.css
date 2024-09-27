@@ -1,0 +1,61 @@
+@media only screen and (max-width: 600px) {
+  .heroTitle {
+    font-size: 4rem;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    letter-spacing: -0.2rem;
+    line-height: 1;
+    /* padding-bottom: 10px; */
+    padding: 20px 10px;
+  }
+  .section2 {
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 150px 30px 0;
+  }
+  .section2_awareContainer {
+    background-color: var(--pink-background-color);
+    max-width: 100%;
+    max-height: 1%;
+    height: 380px;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: var(---borderRadius);
+  }
+  .section2_awareTitle {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 15px;
+    padding-top: 25px;
+  }
+  .section2_awareParagraph {
+    font-size: 1.5rem;
+    max-width: 100%;
+    line-height: 1.5;
+  }
+  .section2_launchContainer {
+    padding: 50px 20px;
+    max-width: 100%;
+  }
+  .section2_launchTitle {
+    text-align: left;
+    font-size: 2rem;
+    letter-spacing: 1;
+  }
+  .section2_launchParagraph {
+    max-width: 100%;
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.5;
+  }
+  .section2_launchBtn {
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    text-align: left;
+  }
+}

@@ -42,9 +42,10 @@ body {
 }
 
 nav {
-  padding: 40px;
+  /* padding: 40px; */
+  padding: 10px 20px;
   position: fixed;
-  top: 0;
+  /* top: 0; */
 }
 
 #hero {
@@ -69,7 +70,7 @@ nav {
 }
 
 .logoSvg {
-  height: 30px;
+  height: 20px;
 }
 
 .backgroundOverlay {
@@ -85,7 +86,7 @@ nav {
   /* padding-left: 50px; */
 }
 .section1 {
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 35px;
 }
 .section2 {
@@ -144,7 +145,6 @@ nav {
 
 .section2_launchTitle {
   font-size: 4rem;
-
   font-weight: 400;
   padding-bottom: 15px;
 }
