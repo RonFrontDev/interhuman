@@ -543,9 +543,12 @@
         </div>
         <div class="footer_signup_container">
           <div class="footer_signup_text">
-            <p>Get updates on our</p>
-            <p>progress and upcoming</p>
-            <p>products</p>
+            <p>
+              Get updates on our and <br />progress and upcoming <br />
+              products
+            </p>
+            <!-- <p>progress and upcoming</p>
+            <p>products</p> -->
           </div>
           <input
             class="footer_signup_inputfield"
@@ -588,7 +591,7 @@
         container.appendChild(renderer.domElement);
 
         const circles = [];
-        const circleCount = 500;
+        const circleCount = 5000;
         const circleRadius = 0.24;
         for (let i = 0; i < circleCount; i++) {
           const circleGeometry = new THREE.CircleGeometry(circleRadius, 32);

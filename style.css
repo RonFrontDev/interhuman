@@ -467,11 +467,12 @@ footer {
 }
 
 .footer-logo {
-  height: 250px;
+  height: 150px;
+  width: 100%;
 }
 
 .flex-rail {
-  padding-top: 200px;
+  padding-top: 300px;
   width: 100%;
   white-space: nowrap;
   justify-content: flex-start;
@@ -484,18 +485,23 @@ footer {
 }
 .scene {
   position: absolute;
-  height: 50vh;
+  height: 100%;
+  overflow: hidden;
   background-color: black;
+  z-index: -999;
 }
 
 .inner-text-scrolling {
-  padding: 0 250px 0 0;
+  position: absolute;
+  top: 50px;
+  padding: 0 50px 0 0;
 }
 
 .footer_signup_container {
   color: white;
   font-size: 2.5rem;
   padding: 40px;
+  max-width: 100%;
 }
 
 .footer_signup_text {
@@ -507,15 +513,16 @@ footer {
 }
 .footer_copyright {
   font-size: 1.5rem;
+  color: red;
 }
 .footer_signup_inputfield {
-  width: 100%;
+  width: 400px;
   font-size: 1.5rem;
   padding: 20px;
   background-color: transparent;
   border-radius: 7px;
   border: 1px solid lightslategray;
-  border-right: 0;
+  /* border-right: 0; */
 }
 
 .footer_links {
