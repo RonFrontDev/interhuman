@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('[data-my-body-bg]');
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("[data-my-body-bg]");
 
   const observerOptions = {
     root: null, // viewport
-    rootMargin: '-50% 0px',
+    rootMargin: "-50% 0px",
     threshold: 0, // 50% of section must be visible
   };
 
@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const sectionColor = section.dataset.mySectionColor;
 
         console.log(sectionColor);
-        document.documentElement.style.setProperty('--bodyBg', bodyBg);
-        document.documentElement.style.setProperty('--bodyColor', bodyColor);
+        document.documentElement.style.setProperty("--bodyBg", bodyBg);
+        document.documentElement.style.setProperty("--bodyColor", bodyColor);
         if (sectionBg) {
-          document.documentElement.style.setProperty('--sectionBg', sectionBg);
+          document.documentElement.style.setProperty("--sectionBg", sectionBg);
         }
         if (sectionColor) {
           //prettier-ignore
