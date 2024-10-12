@@ -520,57 +520,56 @@
         data-my-section-color="black"
       >
         <aside id="canvas-container" class="scene"></aside>
-        <div class="flex-rail">
-          <div class="inner-text-scrolling large">
-            <img
-              src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/6655f778a9fba6ca1f3b7595_interhuman-temp2.svg"
-              loading="lazy"
-              id="Footer-logo"
-              alt=""
-              class="footer-logo"
-            />
+        <div class="footer_content">
+          <div class="flex-rail">
+            <div class="inner-text-scrolling large">
+              <img
+                src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/6655f778a9fba6ca1f3b7595_interhuman-temp2.svg"
+                loading="lazy"
+                alt=""
+                class="footer-logo"
+              />
+            </div>
+            <div class="inner-text-scrolling large">
+              <img
+                src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/6655f778a9fba6ca1f3b7595_interhuman-temp2.svg"
+                loading="lazy"
+                alt=""
+                class="footer-logo"
+              />
+            </div>
+            <div class="inner-text-scrolling large">
+              <img
+                src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/6655f778a9fba6ca1f3b7595_interhuman-temp2.svg"
+                loading="lazy"
+                alt=""
+                class="footer-logo"
+              />
+            </div>
           </div>
-          <div class="inner-text-scrolling large">
-            <img
-              src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/6655f778a9fba6ca1f3b7595_interhuman-temp2.svg"
-              loading="lazy"
-              id="Footer-logo"
-              alt=""
-              class="footer-logo"
-            />
-          </div>
-          <div class="inner-text-scrolling large">
-            <img
-              src="https://cdn.prod.website-files.com/663b8e2e059204fb9d2aef19/6655f778a9fba6ca1f3b7595_interhuman-temp2.svg"
-              loading="lazy"
-              id="Footer-logo"
-              alt=""
-              class="footer-logo"
-            />
-          </div>
-        </div>
-        <div class="footer_signup_container">
-          <div class="footer_signup_text">
-            <p>
-              Get updates on our and <br />progress and upcoming <br />
-              products
-            </p>
-            <!-- <p>progress and upcoming</p>
+          <div class="footer_signup_container">
+            <div class="footer_signup_text">
+              <p>
+                Get updates on our and <br />progress and upcoming <br />
+                products
+              </p>
+              <!-- <p>progress and upcoming</p>
             <p>products</p> -->
+            </div>
+            <input
+              class="footer_signup_inputfield"
+              placeholder="Enter your email"
+              type="email"
+              name=""
+              id=""
+            />
           </div>
-          <input
-            class="footer_signup_inputfield"
-            placeholder="Enter your email"
-            type="email"
-            name=""
-            id=""
-          />
-        </div>
-        <div class="footer_bottomContainer">
-          <p class="footer_copyright">© Interhuman AI 2024</p>
-          <div>
-            <a class="footer_links" href="#">Instagram</a>
-            <a class="footer_links" href="#">LinkedIn</a>
+          <div class="footer_bottomContainer">
+            <p class="footer_copyright">© Interhuman AI 2024</p>
+            <div>
+              <a class="footer_links" href="#">Instagram</a>
+              <a class="footer_links" href="#">LinkedIn</a>
+            </div>
           </div>
         </div>
       </footer>
@@ -599,7 +598,7 @@
         container.appendChild(renderer.domElement);
 
         const circles = [];
-        const circleCount = 5000;
+        const circleCount = 500;
         const circleRadius = 0.24;
         for (let i = 0; i < circleCount; i++) {
           const circleGeometry = new THREE.CircleGeometry(circleRadius, 32);

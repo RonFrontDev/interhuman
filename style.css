@@ -274,25 +274,24 @@ nav {
 
 .video_link {
   position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--green-background-color);
-  height: 150px;
-  width: 150px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
   z-index: 1000;
 }
 
 .section4_icon {
   position: absolute;
-  height: 100px;
-  width: 100px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
   fill: var(--bodyColor);
-  /* padding: 30px; */
-  border-radius: 50%;
 }
 
 .section5 {
@@ -461,16 +460,15 @@ nav {
 }
 
 footer {
-  /* padding-top: 200px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   position: relative;
 }
 
-.footer-logo {
-  height: 150px;
-  width: 100%;
+.footer_content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .flex-rail {
@@ -486,11 +484,9 @@ footer {
   animation: scroll 30s linear infinite;
 }
 .scene {
-  position: absolute;
+  min-height: 836px;
   height: 100%;
-  overflow: hidden;
   background-color: black;
-  z-index: -999;
 }
 
 .inner-text-scrolling {
