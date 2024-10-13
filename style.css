@@ -391,12 +391,12 @@ nav {
 
 .section7 {
   color: var(--black-color);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   text-align: center;
   min-height: 100%;
   /* margin: 0 30px; */
-  padding: 15px;
+  padding: 150px 250px;
   border-radius: var(---borderRadius);
   transition: background-color 1s, color 0.5s;
 }
@@ -425,9 +425,14 @@ nav {
 
 .section7_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-gap: 20px;
 }
+/* .section7_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 20px;
+} */
 .section7_imagewrapper {
   overflow: hidden;
 }
@@ -446,6 +451,7 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: left;
+  padding-bottom: 100px;
 }
 .card_name {
   padding: 20px 0;
